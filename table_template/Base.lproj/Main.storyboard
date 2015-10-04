@@ -95,8 +95,6 @@
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="11"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="editDidEnd:" destination="6DD-8C-bqO" eventType="editingDidEnd" id="rMc-7i-ssb"/>
-                                    <action selector="touchDown:" destination="6DD-8C-bqO" eventType="touchDown" id="IAz-Sd-KgB"/>
                                     <outlet property="delegate" destination="6DD-8C-bqO" id="nAK-bH-qyH"/>
                                 </connections>
                             </textField>

@@ -22,33 +22,9 @@ class YoutubeViewController: UIViewController, NSURLSessionDelegate,
     
     // youtube text field
     @IBOutlet weak var yttf: UITextField!
-    
-    @IBAction func touchDown(sender: AnyObject) {
-/*
-        let str = yttf.text
-        if str == "enter URL here..." {
-            self.yttf.text = ""
-        }
-*/
-    }
+
     @IBOutlet weak var videoTable: UITableView!
     
-    @IBAction func editDidEnd(sender: AnyObject) {
-        /*
-        let str = yttf.text
-        
-        if str == "" {
-            displayAlertWithTitle("please enter a url", message: "")
-            return
-        }
-
-        /* Now attempt to download the contents of the URL */
-        url = NSURL(string: str)
-        let task = session.downloadTaskWithURL(url!)
-        /* Our own extension on the task adds the start method */
-        task.resume()
-*/
-    }
     
      // perform request task
     func performGetRequest(targetURL: NSURL!, completion: (data: NSData?, HTTPStatusCode: Int, error: NSError?) -> Void) {
@@ -163,19 +139,8 @@ class YoutubeViewController: UIViewController, NSURLSessionDelegate,
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    /*
-        //Looks for single or multiple taps.
-        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
-        view.addGestureRecognizer(tap)
-      */  
     }
-/*
-    //Calls this function when the tap is recognized.
-    func DismissKeyboard(){
-        //Causes the view (or one of its embedded text fields) to resign the first responder status.
-        view.endEditing(true)
-    }
-  */
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
