@@ -17,4 +17,4 @@ An iOS app written in Swift that can search and play videos from Youtube.com
 * iOS 8.0+
 
 ## License
-swift_youtube_player is released under the MIT license. See LICENSE for details.
+swift_video_player is released under the MIT license. See LICENSE for details.
